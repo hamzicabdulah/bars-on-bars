@@ -29,4 +29,9 @@ module.exports = function (app, passport) {
             failureRedirect: '/'
         }));
         
+    app.route('*')
+    .all(function(req, res) {
+      res.redirect('/');
+    });
+        
 };
