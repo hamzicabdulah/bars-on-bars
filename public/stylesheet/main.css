@@ -1,0 +1,116 @@
+/*ng-cloak prevents AngularJS methods to flash on screen before the $scope variables are loaded*/
+[ng-cloak] {
+  display: none !important;
+}
+body {
+  background: #263238;
+  font-family: 'Roboto', sans-serif;
+}
+.heading {
+  margin-top: 3.5em;
+  text-align: center;
+  color: white;
+}
+.heading h1 {
+  padding: 0;
+  margin: 0 0 .1em;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: 'Fascinate Inline', cursive;
+  line-height: 1em;
+}
+.heading p {
+  padding: 0 1.2em;
+  margin: 0;
+}
+.form {
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin-top: 2em;
+}
+.form input {
+  background: inherit!important;
+  color: white;
+  width: 50%;
+  padding: .38em;
+}
+button {
+  padding: .5em;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 20%;
+  background: white;
+  color: #263238;
+}
+.places {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: 3em auto;
+}
+.place  {
+  margin-bottom: 1em;
+  width: 100%;
+  margin: .5em auto .5em;
+  background: white;
+  padding: .6em;
+  word-break: break-word;
+}
+.place a {
+  color: #4d004d;
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+}
+.place .img-wrapper {
+  float: left;
+  width: 8em;
+  height: 10em;
+  margin-right: .5em;
+}
+.place .img {
+  width: 100%;
+  height: 80%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: .3em;
+}
+.place button {
+  width: 100%;
+  background: #4d004d;
+  color: white;
+}
+.place .info h3, .place .info h6, .place .info p {
+  padding: 0;
+}
+.place .info h3, .place .info p, .place .info h6 {
+  margin: 0 0;
+}
+.place .info .h6-headers {
+  display: flex;
+  flex-wrap: wrap;
+}
+.place .info h6:first-child {
+  margin: 0 3em .5em 0;
+}
+.place .info h6:nth-child(2) {
+  color: #b71c1c;
+}
+.place .info p {
+  margin-top: .4em;
+}
+@media screen and (min-width: 780px) {
+  .place {
+    width: 45%;
+  }
+  .form input {
+    width: 30%;
+  }
+  .form button {
+    width: 15%;
+  }
+}
