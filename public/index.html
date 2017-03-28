@@ -8,6 +8,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Cinzel|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
         <link href="/public/stylesheet/main.css" rel="stylesheet" type="text/css">
     </head>
 
@@ -16,7 +17,7 @@
         <div class="heading">
             <h1>Bars On Bars</h1>
             <p>
-                Nightlife coordination service that allows you to see which bars in your area you can visit tonight.
+                Nightlife coordination service to help you find out which bars in your area you can visit tonight.
             </p>
         </div>
         
@@ -24,6 +25,10 @@
             <input type="text" id="location" ng-model="locationVal"/>
             <button type="submit" ng-click="search()">Search</button>
         </form>
+        
+        <div class="loading {{loading}}">
+            <i class="fa fa-circle-o-notch fa-spin fa-5x fa-fw"></i>
+        </div>
         
         <div class="places row">
             <div class="place" data-ng-repeat="item in placesArr">
